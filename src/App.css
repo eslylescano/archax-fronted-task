@@ -1,25 +1,36 @@
 .App {
+    min-height: 100vh;
     text-align: center;
     font-family: Arial, sans-serif;
-}
-
-.App-header {
+  }
+  
+  .App-header {
     background-color: #282c34;
     padding: 20px;
     color: white;
-}
-
-.main-content {
+  }
+  
+  .main {
     display: flex;
+    align-items: stretch;
     padding: 20px;
-}
-
-.sidebar {
+  }
+  
+  .main-sidebar {
     width: 30%;
-    margin-right: 20px;
-    background-color: #053fb3;
-}
-
-.content {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
     width: 70%;
-}
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main-divider {
+    width: 1px;
+    background-color: #000000;
+    margin-top: 10px;
+  }
+  

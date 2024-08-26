@@ -6,17 +6,16 @@ import FilterSlider from "./components/FilterSlider/FilterSlider";
 function App() {
   return (
     <>
-      <div className="App">
-        <div className="main-content">
-          <div className="sidebar">
+        <div className="main">
+          <div className="main-sidebar">
             <BusinessCapabilityTree />
             <FilterSlider />
           </div>
-          <div className="content">
+          <div className="main-divider"></div>
+          <div className="main-content">
             <ApplicationList />
           </div>
         </div>
-      </div>
     </>
   );
 }
