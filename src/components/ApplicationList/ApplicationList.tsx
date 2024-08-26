@@ -1,18 +1,26 @@
-import applications from '../../../data.json';
+import React from 'react';
 import ApplicationItem from "./ApplicationItem/ApplicationItem";
 import './ApplicationList.css';
 
 interface Application {
+  id: string;
   name: string;
   spend: number;
+  BCAP1?: string;
+  BCAP2?: string;
+  BCAP3?: string;
 }
 
-const ApplicationList: React.FC = () => {
+interface ApplicationListProps {
+  applications: Application[];
+}
+
+const ApplicationList: React.FC<ApplicationListProps> = ({ applications }) => {
   return (
     <div className="application-list">
-      {applications.map((app: Application, index: number) => (
+      {applications.map((app) => (
         <ApplicationItem 
-          key={index} 
+          key={app.id} 
           name={app.name} 
           totalSpend={app.spend} 
         />
