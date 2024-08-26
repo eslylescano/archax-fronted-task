@@ -1,0 +1,27 @@
+.filter-slider-title{
+    margin-bottom: 10px;
+  }
+.filter-slider-range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-slider-description{
+    margin: 0px;
+}
+
+.filter-slider-range-paragraph {
+    margin: 0;
+}
+
+.filter-slider-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-slider-container input[type="range"] {
+    width: 100%;
+    margin: 0;
+    height: 12px;
+}
