@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './BusinessCapabilityTree.css';
 import BusinessCapabilityTreeItem from './BusinessCapabilityTreeItem/BusinessCapabilityTreeItem';
-import businessCapabilities from '../../../data.json'; // Import the JSON data
+import businessCapabilities from '../../../data.json';
 
 interface ExpandedState {
   [key: string]: boolean;

@@ -1,12 +1,28 @@
-
 ul, .business-capability-tree {
-    list-style-type: none;
-  }
-  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .business-capability-tree {
-    margin: 0;
-    padding: 0;
-  }
-  
+.business-capability-tree {
+  margin: 0;
+  padding: 0;
+}
 
+.business-capability-tree > li {
+  padding-left: 0;
+}
+
+.business-capability-tree ul > li {
+  padding-left: 10px;
+}
+
+.business-capability-tree ul ul > li {
+  padding-left: 20px;
+}
+
+.business-capability-tree li {
+  margin-left: 0;
+  position: relative;
+  line-height: 1.5;
+}
