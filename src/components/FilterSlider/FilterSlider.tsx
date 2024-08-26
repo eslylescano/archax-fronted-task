@@ -8,7 +8,6 @@ interface FilterSliderProps {
 }
 
 const FilterSlider: React.FC<FilterSliderProps> = ({ minSpend, maxSpend, onChange }) => {
-  // Set initial value to the middle of minSpend and maxSpend
   const [value, setValue] = useState<number>(0);
 
   useEffect(() => {

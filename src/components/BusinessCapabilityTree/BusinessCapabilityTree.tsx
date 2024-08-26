@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './BusinessCapabilityTree.css';
 import BusinessCapabilityTreeItem from './BusinessCapabilityTreeItem/BusinessCapabilityTreeItem';
-import businessCapabilities from '../../../data.json';
 
 interface ExpandedState {
   [key: string]: boolean;
 }
 
-interface Capability {
+interface Application {
   id: string;
   name: string;
   spend: number;
@@ -16,7 +15,12 @@ interface Capability {
   BCAP3: string;
 }
 
-const BusinessCapabilityTree: React.FC = () => {
+
+interface BusinessCapabilityTreeProps {
+  applications: Application[];
+}
+
+const BusinessCapabilityTree: React.FC<BusinessCapabilityTreeProps>  = ({applications}) => {
   const [expanded, setExpanded] = useState<ExpandedState>({});
 
   const toggleItem = (id: string) => {
@@ -29,7 +33,7 @@ const BusinessCapabilityTree: React.FC = () => {
   const getTreeData = () => {
     const treeData: { [key: string]: any } = {};
 
-    businessCapabilities.forEach((item: Capability) => {
+    applications.forEach((item: Application) => {
       if (!treeData[item.BCAP1]) {
         treeData[item.BCAP1] = { expanded: false, children: {} };
       }

@@ -6,13 +6,12 @@ import useData from './hooks/useData';
 
 function App() {
   const { filteredData, minSpend, maxSpend, handleFilterChange } = useData();
-
   return (
     <>
       <div className="main">
         <div className="main-sidebar">
           <h3 className="main-sidebar-title">Navigation</h3>
-          <BusinessCapabilityTree />
+          <BusinessCapabilityTree applications={filteredData}/>
           <div className="main-sidebar-divider"></div>
           <FilterSlider minSpend={minSpend} maxSpend={maxSpend} onChange={handleFilterChange}/>
         </div>

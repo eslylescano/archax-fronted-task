@@ -1,15 +1,7 @@
 import React from 'react';
 import ApplicationItem from "./ApplicationItem/ApplicationItem";
 import './ApplicationList.css';
-
-interface Application {
-  id: string;
-  name: string;
-  spend: number;
-  BCAP1?: string;
-  BCAP2?: string;
-  BCAP3?: string;
-}
+import { Application } from '../../types/types';
 
 interface ApplicationListProps {
   applications: Application[];
