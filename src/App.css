@@ -16,6 +16,10 @@
     padding: 20px;
   }
   
+  .main-sidebar-title{
+    margin: 0;
+    margin-bottom: 10px;
+  }
   .main-sidebar {
     width: 30%;
     padding: 20px;

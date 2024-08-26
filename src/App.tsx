@@ -8,7 +8,9 @@ function App() {
     <>
         <div className="main">
           <div className="main-sidebar">
+            <h3 className="main-sidebar-title">Navigation</h3>
             <BusinessCapabilityTree />
+            <div className="main-sidebar-divider"></div>
             <FilterSlider />
           </div>
           <div className="main-divider"></div>

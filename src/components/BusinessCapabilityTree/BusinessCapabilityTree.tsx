@@ -72,7 +72,7 @@ const BusinessCapabilityTree: React.FC = () => {
   const treeData = getTreeData();
 
   return (
-    <div>
+    <div className="business-capability">
       <ul className="business-capability-tree">
         {renderTree(treeData)}
       </ul>

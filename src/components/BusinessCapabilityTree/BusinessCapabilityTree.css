@@ -1,3 +1,6 @@
+.business-capability{
+  margin-bottom: 20px;
+}
 ul, .business-capability-tree {
   list-style-type: none;
   margin: 0;
@@ -14,7 +17,7 @@ ul, .business-capability-tree {
 }
 
 .business-capability-tree ul > li {
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 .business-capability-tree ul ul > li {
