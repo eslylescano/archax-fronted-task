@@ -1,11 +1,16 @@
-import ApplicationItem from "./ApplicationItem/ApplicationItem";
 import applications from '../../../data.json';
+import ApplicationItem from "./ApplicationItem/ApplicationItem";
 import './ApplicationList.css';
 
-export default function ApplicationList() {
+interface Application {
+  name: string;
+  spend: number;
+}
+
+const ApplicationList: React.FC = () => {
   return (
     <div className="application-list">
-      {applications.map((app, index) => (
+      {applications.map((app: Application, index: number) => (
         <ApplicationItem 
           key={index} 
           name={app.name} 
@@ -15,3 +20,5 @@ export default function ApplicationList() {
     </div>
   );
 }
+
+export default ApplicationList;
